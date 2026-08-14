@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To sean ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background: #120018;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: monospace;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        .heart {
+            font-size: 120px;
+            color: #ff4d8d;
+            image-rendering: pixelated;
+            text-shadow:
+                5px 5px 0 #b51f5c,
+                10px 10px 0 #6d1238;
+            animation: beat 1s infinite steps(2);
+        }
+
+        .text {
+            color: #ffb6d5;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            text-shadow: 4px 4px 0 #7a1744;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+        }
+
+        .pixel {
+            position: absolute;
+            color: #ff69b4;
+            font-size: 20px;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(-100px);
+            }
+
+            to {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heart">♥</div>
+        <div class="text">I LOVE YOU</div>
+    </div>
+
+    <div class="pixel" style="left:10%; animation-duration:5s;">♥</div>
+    <div class="pixel" style="left:25%; animation-duration:7s;">♥</div>
+    <div class="pixel" style="left:40%; animation-duration:6s;">♥</div>
+    <div class="pixel" style="left:60%; animation-duration:8s;">♥</div>
+    <div class="pixel" style="left:75%; animation-duration:5s;">♥</div>
+    <div class="pixel" style="left:90%; animation-duration:7s;">♥</div>
+
+</body>
+</html>
