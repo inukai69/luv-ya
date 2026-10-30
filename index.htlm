@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #17121c;
+  height: 100vh;
+  overflow: hidden;
+  font-family: Georgia, serif;
+}
+
+.marquee {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 12s linear infinite;
+}
+
+.marquee span {
+  color: #f8d9e8;
+  font-size: 25px;
+  text-align: center;
+  padding: 13px 0;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(100vh);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="marquee">
+  <span>I'm Sorry ♡</span>
+  <span>I'm Sorry ♡ I'm Sorry ♡</span>
+  <span>Please Don't Be Mad ♡</span>
+  <span>I'm Sorry I'm Sorry I'm Sorry</span>
+  <span>Please Forgive Me ♡</span>
+  <span>I'm Sorry ♡ I'm Sorry ♡ I'm Sorry</span>
+  <span>Don't Be Upset, My Love ♡</span>
+  <span>I'm Sorry I'm Sorry I'm Sorry I'm Sorry</span>
+  <span>Please Don't Be Mad At Me ♡</span>
+  <span>I'm Sorry ♡</span>
+  <span>I'm Sorry I'm Sorry I'm Sorry I'm Sorry</span>
+  <span>Please Forgive Me, Baby ♡</span>
+  <span>I'm Sorry ♡ I'm Sorry ♡</span>
+  <span>Don't Be Mad, My Love ♡</span>
+  <span>I'm Sorry I'm Sorry I'm Sorry</span>
+  <span>Please Don't Be Upset ♡</span>
+  <span>I'm Sorry ♡ I'm Sorry ♡ I'm Sorry</span>
+  <span>I Promise I'll Make It Up To You ♡</span>
+  <span>I'm Sorry I'm Sorry I'm Sorry I'm Sorry</span>
+  <span>Please Smile Again ♡</span>
+  <span>I'm Sorry ♡ I'm Sorry ♡</span>
+  <span>Forgive Me, My Love ♡</span>
+  <span>I'm Sorry I'm Sorry I'm Sorry</span>
+  <span>Don't Be Mad At Me ♡</span>
+  <span>I'm Sorry ♡ I'm Sorry ♡ I'm Sorry</span>
+</div>
+
+</body>
+</html>
